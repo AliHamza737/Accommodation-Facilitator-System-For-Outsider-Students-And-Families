@@ -1,0 +1,253 @@
+﻿
+@{
+    ViewBag.Title = "Reservation";
+    Layout = "~/Views/_LayoutPage4.cshtml";
+}
+
+<div class="w3_breadcrumb">
+    <div class="breadcrumb-inner">
+        <ul>
+            <li><a>@Html.ActionLink("Home", "Home", "Home")</a> <i> /</i></li>
+            <li>About</li>
+        </ul>
+    </div>
+</div>
+<div class="about-bottom" id="ab">
+    <div class="col-md-6 w3l_about_bottom_right two">
+        <h3 class="tittle why">Book a Reservation</h3>
+        <div class="book-form">
+
+            <form action="#" method="post">
+                <div class="col-md-6 form-date-w3-agileits">
+                    <label><i class="fa fa-user" aria-hidden="true"></i> Name :</label>
+                    <input type="text" name="Name" placeholder="Your name" required="">
+                </div>
+                <div class="col-md-6 form-date-w3-agileits second-agile">
+                    <label><i class="fa fa-envelope" aria-hidden="true"></i> Email :</label>
+                    <input type="email" name="Email" placeholder="Your email" required="">
+                </div>
+                <div class="col-md-6 form-date-w3-agileits">
+                    <label><i class="fa fa-calendar" aria-hidden="true"></i> Arrival Date :</label>
+                    <input id="datepicker" name="InDate" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+
+                </div>
+                <div class="col-md-6 form-time-w3layouts second-agile">
+                    <label><i class="fa fa-clock-o" aria-hidden="true"></i> Time :</label>
+                    <input type="time" name="Time">
+                </div>
+                <div class="col-md-6 form-left-agileits-w3layouts bottom-w3ls">
+                    <label><i class="fa fa-home" aria-hidden="true"></i> Choose a Room :</label>
+                    <select class="form-control" name="Room">
+                        <option></option>
+                        <option>Single Bed room</option>
+                        <option>Standard Double Room</option>
+                        <option>Standard Family Room</option>
+                        <option>Garden Family Room</option>
+                        <option>Deluxe Double Room</option>
+                    </select>
+                </div>
+                <div class="col-md-6 form-date-w3-agileits">
+                    <label><i class="fa fa-calendar" aria-hidden="true"></i> Departure Date :</label>
+                    <input id="datepicker1" name="OutDate" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" required="">
+
+                </div>
+                <div class="col-md-6 form-left-agileits-w3layouts bottom-w3ls">
+                    <label><i class="fa fa-home" aria-hidden="true"></i> Choose a Hostel Name :</label>
+                    <select class="form-control" name="Hostel">
+                        <option></option>
+                        <option>Jinnah Hostel</option>
+                        <option>Doctors Hostel</option>
+                        <option>Sadiq Mention</option>
+                        <option>Anarkali IN Hostel</option>
+                        <option>Umar Hostel</option>
+                    </select>
+                </div>
+                <div class="col-md-6 form-left-agileits-w3layouts second-agile">
+                    <label><i class="fa fa-users" aria-hidden="true"></i> No.of People :</label>
+                    <select class="form-control" name="Person">
+                        <option></option>
+                        <option>1 Person</option>
+                        <option>2 People</option>
+                        <option>3 People</option>
+                        <option>4 People</option>
+                        <option>5 People</option>
+                        <option>More</option>
+                    </select>
+                </div>
+                <div class="clearfix"> </div>
+                <div class="make wow shake" data-wow-duration="1s" data-wow-delay=".5s">
+                    <input type="submit" value="Make a Reservation">
+                </div>
+            </form>
+            <p class="Noti-Reser"><span class="Noti-Reser">NOTE:</span> Clicking on Make a reservation, You will recieve a confirmation soon on Provided contact number and email by authority</p>
+        </div>
+        
+
+    </div>
+    <div class="col-md-6 w3l_about_bottom_left">
+
+        <img src="~/images/33.jpg" alt="" class="img-responsive" />
+        <div class="w3l_about_bottom_left_video book-text">
+            <h4>BooK Now</h4>
+        </div>
+    </div>
+
+    <div class="clearfix"> </div>
+</div>
+<div class="plans-section">
+    <div class="container">
+        <h3 class="w3l-inner-h-title">Rates and Booking</h3>
+        <div class="priceing-table-main">
+            <div class="col-md-3 price-grid">
+                <div class="price-block agile">
+                    <div class="price-gd-top pric-clr1">
+                        <h4>SINGLE ROOM</h4>
+                        <h4><span>RS </span>3000</h4>
+                        <h5>1 Month</h5>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+
+                            </ul>
+                            <h6 class="bed"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+                        </div>
+                        <div class="price-selet pric-sclr1">
+                            <a href="#ab" class="scroll">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 price-grid ">
+                <div class="price-block agile">
+                    <div class="price-gd-top pric-clr2">
+                        <h4>Family Room</h4>
+                        <h4><span>RS </span>9000</h4>
+                        <h5>1 Month</h5>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+
+                            </ul>
+                            <h6 class="bed two"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+
+                        </div>
+                        <div class="price-selet pric-sclr2">
+                            <a href="#ab" class="scroll">Book Now</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 price-grid lost">
+                <div class="price-block agile">
+                    <div class="price-gd-top pric-clr3">
+                        <h4>DOUBLE ROOM</h4>
+                        <h4><span>RS</span>12000</h4>
+                        <h5>1 Month</h5>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+
+                            </ul>
+                            <h6 class="bed three"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+                        </div>
+                        <div class="price-selet pric-sclr3">
+                            <a href="#ab" class="scroll">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 price-grid wthree lost">
+                <div class="price-block agile">
+                    <div class="price-gd-top pric-clr4">
+                        <h4>STANDARD</h4>
+                        <h4><span>RS</span> 10000</h4>
+                        <h5>1 Month</h5>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+
+                            </ul>
+                            <h6 class="bed four"><i class="fa fa-bed" aria-hidden="true"></i></h6>
+                        </div>
+                        <div class="price-selet pric-sclr4">
+                            <a href="#ab" class="scroll">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="~/js/jquery.zoomslider.min.js"></script>
+<script src="~/js/main.js"></script>
+<script src="~/js/simplePlayer.js"></script>
+<script>
+            $("document").ready(function () {
+                $("#video").simplePlayer();
+            });
+</script>
+<script defer src="~/js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+            $(window).load(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide",
+                    start: function (slider) {
+                        $('body').removeClass('loading');
+                    }
+                });
+            });
+</script>
+<link rel="stylesheet" href="~/css/jquery-ui.css" />
+<script src="~/js/jquery-ui.js"></script>
+<script>
+            $(function () {
+                $("#datepicker,#datepicker1,#datepicker2,#datepicker3").datepicker();
+            });
+</script>
+<script type="text/javascript" src="~/js/move-top.js"></script>
+<script type="text/javascript" src="~/js/easing.js"></script>
+
+<script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+                });
+            });
+</script>
+<script type="text/javascript">
+            $(document).ready(function () {
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+</script>
+<script src="~/js/bootstrap.js"></script>
